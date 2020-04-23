@@ -1,0 +1,253 @@
+@font-face {
+    font-family: Futura;
+    src: url(../fonts/FuturaPTMedium.otf);
+}
+@font-face {
+    font-family: FuturaLight;
+    src: url(../fonts/FuturaPTLight.otf)
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    background-image: linear-gradient(to right, #0079a8, #6ccdf0);
+    display: flex;
+    align-items: center;
+}
+#section_pagina{
+    display: inline-block;
+    width: 100%;
+    height: 75%;
+    padding: 10vh 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1,h4,p,input{
+    font-family: Futura;
+    color: white;
+}
+h1{
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 1.0;
+    margin-bottom: 10px;
+}
+p{
+    text-align: justify;
+    font-size: medium;
+    margin-bottom: 0;
+    font-family: FuturaLight;
+}
+aside,section{
+    box-sizing: border-box; 
+    height: 100%;
+ }
+header{
+    height: 18vh;
+    width: 100%;
+}
+#section_direita{
+    float: right;
+    width: 35%;
+    padding-left: 3%;
+}
+aside{
+    float: left;
+    width: 65%;
+    max-width: 700px;
+    background-image: url(../png/Mulher com tablet.png);
+    background-repeat: no-repeat;    
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+input,button{
+    height: 45px;
+    width: 100%;
+    color: white;
+}
+input{
+    text-indent: 2%;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+}
+input:focus{
+    border: 1px solid #51dc85;
+    outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-internal-autofill-selected{
+    background: transparent;
+}
+::placeholder{
+    color: white;
+    opacity: 0.9;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: white;
+  opacity: 0.9;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+  opacity: 0.9;
+}
+button{
+    background-color: #51dc85;
+    border: none;
+    font-weight: 700;
+}
+#direita_interna{
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#logo-panfleto{
+    width: 60%;
+    align-self: center;
+    margin-bottom: 1vh;
+}
+#logo-alertrack{
+    width: 20%;
+    max-height: 80px;
+}
+#control-aside{
+    width: 85%;
+    justify-content: space-evenly;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-self: normal;
+    min-height: 56.25%;
+    justify-content: space-between;
+}
+#fundo-zap{
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    height: 50vh;
+    z-index: -10;
+}
+#panfleto{
+    height: 55%;
+    position: relative;
+    top: 30%;
+    width: 30%
+}
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: auto;
+  position: relative;
+  top: 25vh;
+  text-align: center;
+  border-radius: 7px;     
+  overflow: hidden;
+  min-height: 200px;
+  max-width: 300px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+h4{
+    margin-bottom: 30px;
+    color: black;
+}
+#ok{
+height: auto;
+width: 65px;
+background-color: #0eb9bd;
+border: none;
+border-radius: 7px;
+color: white;
+padding:10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-top: 20px;
+}
+#u_0_1 > div{
+    text-align: left !important;
+}
+button:hover{
+    opacity: 0.5;
+}
+#bm{
+    height: 100px;
+    clear: both;        
+}
+canvas{
+    width: 100%;
+    height: 100%;
+}
+#rodape{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    position: absolute;
+    bottom: 5vh;    
+}
+video{
+    width: 85%;
+    height: 56.25%;
+    align-self: center;
+    background-color: #0079a8;
+}
+@media screen and (max-height: 768px) and (max-width: 1024px) {
+    p{
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 0; 
+    }
+    h1{
+        font-size: 30px;
+    }
+    button{
+        margin-bottom: 0;
+    }
+    header{
+        height: 12vh;
+    }
+    .modal-content{
+        top: 20vh;
+    }
+}
