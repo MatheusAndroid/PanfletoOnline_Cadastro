@@ -5,10 +5,10 @@
     if (isset($_POST["email"])){ $email = (string) $_POST["email"];};
     if (isset($_POST["telefone"])){ $tel = (string) $_POST["telefone"];};
     
-    $servername = "127.0.0.1";
-    $username = 'alertrac_dev';
-    $password = 'm4rk3t1ng@2020#';
-    $dbname = 'alertrac_site';
+    $servername = "servername";
+    $username = 'username';
+    $password = 'password';
+    $dbname = 'promotional_site';
     
     $nome = trim($nome);
     $email = trim($email);    
